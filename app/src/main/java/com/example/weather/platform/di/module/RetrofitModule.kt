@@ -19,31 +19,31 @@ import java.util.concurrent.TimeUnit
 @Module
 object RetrofitModule {
 
-    var httpClient: OkHttpClient
+   // var httpClient: OkHttpClient
 
-    init {
-
-        val interceptor = HttpLoggingInterceptor()
-        interceptor.level = HttpLoggingInterceptor.Level.BODY
-        httpClient = OkHttpClient.Builder()
-            .addInterceptor(interceptor) // .addInterceptor(REWRITE_CACHE_CONTROL_INTERCEPTOR)
-            .connectTimeout(100, TimeUnit.SECONDS)
-            .readTimeout(100, TimeUnit.SECONDS)
-            .addNetworkInterceptor { chain ->
-                val request: Request =
-                    chain.request().newBuilder() // .addHeader(Constant.Header, authToken)
-                        .build()
-                chain.proceed(request)
-            }.build()
-    }
+//    init {
+//
+//        val interceptor = HttpLoggingInterceptor()
+//        interceptor.level = HttpLoggingInterceptor.Level.BODY
+//        httpClient = OkHttpClient.Builder()
+//            .addInterceptor(interceptor) // .addInterceptor(REWRITE_CACHE_CONTROL_INTERCEPTOR)
+//            .connectTimeout(100, TimeUnit.SECONDS)
+//            .readTimeout(100, TimeUnit.SECONDS)
+//            .addNetworkInterceptor { chain ->
+//                val request: Request =
+//                    chain.request().newBuilder() // .addHeader(Constant.Header, authToken)
+//                        .build()
+//                chain.proceed(request)
+//            }.build()
+//    }
 
     @Provides
     fun provideRetrofit(): Retrofit {
         return Retrofit.Builder()
             .baseUrl(URL_BASE)
             .addConverterFactory(GsonConverterFactory.create())
-            .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
-            .client(httpClient)
+//            .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+//            .client(httpClient)
             .build()
     }
 
