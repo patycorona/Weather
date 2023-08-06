@@ -26,7 +26,6 @@ class WeatherViewModel @Inject constructor(
     private val loaded = MutableLiveData<Boolean>()
     fun isLoaded() = loaded
 
-
     suspend fun getWeatherForecastByCoordinates(weatherForecastBCRequest: WeatherRequest){
         viewModelScope.launch{
             try {
@@ -44,5 +43,4 @@ class WeatherViewModel @Inject constructor(
             }
         }
     }
-
 }

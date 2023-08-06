@@ -1,6 +1,5 @@
 package com.example.weather.data.model.response
 
-
 data class ForecastResponse(
     val dt: Long,
     val humidity: Int,

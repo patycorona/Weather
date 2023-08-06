@@ -6,7 +6,6 @@ import com.example.weather.platform.di.module.UseCaseModule
 import dagger.Component
 import javax.inject.Singleton
 
-
 @Singleton
 @Component(
     modules = [
