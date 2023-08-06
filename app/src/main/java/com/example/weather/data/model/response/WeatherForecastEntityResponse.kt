@@ -7,11 +7,5 @@ data class WeatherForecastEntityResponse(
     val current: CurrentResponse,
     val hourly: List<ForecastResponse>?)
 
-//data class WeatherForecastEntityResponse(
-//    @SerializedName("timezone") val timezone:String = "",
-//    @SerializedName("current") val current: CurrentModel = CurrentModel(),
-//    @SerializedName("temp") val temp:Double = 0.0,
-//    @SerializedName("hourly") val list_hourly: MutableList<ForecastResponse>? = mutableListOf()
-//)
 
 

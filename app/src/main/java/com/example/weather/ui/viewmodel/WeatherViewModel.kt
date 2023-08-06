@@ -9,8 +9,6 @@ import com.example.weather.data.model.request.WeatherRequest
 import com.example.weather.data.model.response.WeatherForecastEntityResponse
 import com.example.weather.domain.usecase.WeatherUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
-import io.reactivex.disposables.CompositeDisposable
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -19,11 +17,6 @@ class WeatherViewModel @Inject constructor(
     var weatherUseCase: WeatherUseCase
 ) : ViewModel(){
 
-    //private val compositeDisposable = CompositeDisposable()
-
-//    private val weatherResultModel: MutableLiveData<WeatherForecastEntityResponse> by lazy {
-//        MutableLiveData<WeatherForecastEntityResponse>()
-//    }
     private val result = MutableLiveData<WeatherForecastEntityResponse>()
     fun getResult(): LiveData<WeatherForecastEntityResponse> = result
 

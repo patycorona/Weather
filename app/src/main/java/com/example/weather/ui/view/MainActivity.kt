@@ -35,7 +35,6 @@ class MainActivity : AppCompatActivity(), OnClickListener {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
-
         setupViewModel()
         setupObservers()
         setupAdapter()
@@ -82,9 +81,6 @@ class MainActivity : AppCompatActivity(), OnClickListener {
         }
     }
 
-    /*
-   * OnClickListener
-   * */
     override fun onClick(forecast: ForecastResponse) {
         Snackbar.make(binding.root, Utils.getFullDate(forecast.dt), Snackbar.LENGTH_LONG).show()
     }

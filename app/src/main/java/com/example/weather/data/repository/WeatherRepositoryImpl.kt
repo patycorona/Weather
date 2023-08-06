@@ -20,12 +20,4 @@ class WeatherRepositoryImpl @Inject constructor(var coreServiceApi: CoreServiceA
             weatherRequest.lang
         )
     }
-
-
-
-    /*override suspend fun getWeatherForecastByCoordinates(weatherForecastBCRequest: WeatherForecastbyCordinatesRequest
-    ) : WeatherForescastEntityModel = withContext(Dispatchers.IO){
-        coreServiceApi.getWeatherForecastByCoordinates(weatherForecastBCRequest).toModel()
-    }*/
-
 }
