@@ -5,4 +5,5 @@
     <dimen name="space_0dp">0dp</dimen>
 
     <dimen name="text_size_12sp">12sp</dimen>
+    <dimen name="heigth_1dp">1dp</dimen>
 </resources>
