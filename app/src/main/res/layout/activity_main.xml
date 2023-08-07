@@ -64,8 +64,8 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_width="@dimen/space_0dp"
+            android:layout_height="@dimen/space_0dp"
             tools:listitem="@layout/item_weather"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -73,7 +73,7 @@
             app:layout_constraintBottom_toBottomOf="parent"/>
 
         <com.google.android.material.progressindicator.LinearProgressIndicator
-            android:layout_width="0dp"
+            android:layout_width="@dimen/space_0dp"
             android:layout_height="wrap_content"
             android:indeterminate="true"
             app:isGone="@{viewModel.isLoaded()}"
