@@ -41,7 +41,7 @@
 
         <include
             android:id="@+id/current"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/space_0dp"
             android:layout_height="wrap_content"
             layout="@layout/item_weather"
             app:current="@{viewModel.result.current}"
