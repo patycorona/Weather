@@ -7,7 +7,7 @@ Tecnologías utilizadas: API 33, Java versión 17, Arquitectura Clean, Servicio 
 Patrón de diseño Singleton, Lenguaje de programación Android con Kotlin, Corrutinas, Json,<br>
 Live Data, Data binding. <br>
 <br>
-<br>
+
 
 
 https://github.com/patycorona/Weather/assets/65816817/735f45aa-e401-4afd-8f4d-d206e3695348
