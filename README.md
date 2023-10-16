@@ -16,5 +16,5 @@ https://github.com/patycorona/Weather/assets/65816817/b2ccd616-f0f8-47ec-bd98-ce
  <br>
  *Metodología Git Flow
  <br>
- <img alt="Diagrama" height="650" src="https://github.com/patycorona/Weather/assets/65816817/478cedc8-6523-450c-a4c2-16e846cb1649">
+ <img alt="Diagrama" height="400" src="https://github.com/patycorona/Weather/assets/65816817/478cedc8-6523-450c-a4c2-16e846cb1649">
  
